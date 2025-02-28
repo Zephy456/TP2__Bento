@@ -108,48 +108,51 @@ h1 {
 
 /* Grille de mise en page
    ========================================================================== */
-.grille{
-    display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
-margin:20px;
-}
+
+  .contenant{
+    display: flex;
+    flex-direction: column;
+    flex-flow: 1 1 auto;
+  }
+
+
+/* section 1 */
 .section__1{
-    grid-area: 1 / 2 / 2 / 4; 
     background-color: hsl(256, 67%, 59%);
+
 }
+/* section 2 */
 .section__2{
-    grid-area: 2 / 2 / 3 / 3; 
+ 
 }
+/* section 3 */
 .section__3{
-    grid-area: 2 / 3 / 3 / 4; 
     background-color: hsl(39, 100%, 71%);
+   
 }
+/* section 4 */
 .section__4{
-    grid-area: 1 / 4 / 3 / 5; 
     background-color: hsl(254, 88%, 90%);
+   
 }
+/* section 5 */
 .section__5{
-    grid-area: 3 / 3 / 4 / 5; 
     background-color: hsl(256, 67%, 59%);
+   
 }
+/* section 6 */
 .section__6{
-    grid-area: 3 / 2 / 4 / 3;
+
 }
 
-.sous_section{
-    grid-area: 1 / 1 / 4 / 2;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+/* section 7 */
 .section__7{
 background-color: hsl(31, 66%, 93%);
 
+
+
 }
+/* section 8 */
 .section__8{
 background-color: hsl(39, 100%, 71%);
 
-}
