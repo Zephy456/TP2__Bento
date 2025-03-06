@@ -112,6 +112,7 @@ h1 {
   .contenant{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex-flow: 1 1 auto;
     margin: 1em;
   }
@@ -124,17 +125,31 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 20px;
+    padding: 50px;
     flex-flow: 0 0 auto;
+    margin:auto;
+    border-radius: 10px;
 
 }
 .titre{
-    font-size: 4em;
+    font-size: 4.5em;
     text-align: center;
+    color:hsl(31, 66%, 93%);
+    margin: auto;
+    line-height: 1em;
 }
-.sous_titre{
+.text__section_1{
+    display:flex;
+    align-self: center;
+    margin:auto;
+    font-size: 2em;
+    color:hsl(31, 66%, 93%);
+}
+.sous_titre, .sous_titre_5{
 font-size: 2.5em;
+line-height: 1em;
 }
+
 /* section 2 */
 .section__2{
  margin: 20px;
@@ -143,6 +158,8 @@ font-size: 2.5em;
  align-content: center;
  padding: 20px;
  flex-flow: 0 0 auto;
+margin: auto;
+border-radius: 10px;
 }
 /* section 3 */
 .section__3{
@@ -152,16 +169,17 @@ font-size: 2.5em;
     align-content: center;
     padding: 20px;
     flex-flow: 0 0 auto;
-   
+    border-radius: 10px;
 }
 /* section 4 */
 .section__4{
     background-color: hsl(254, 88%, 90%);
     display: flex;
     flex-direction: column;
-    align-content: center;
     padding: 20px;
     flex-flow: 0 0 auto;
+    max-height: fit-content;
+    border-radius: 10px;
    
 }
 /* section 5 */
@@ -172,6 +190,7 @@ font-size: 2.5em;
     align-content: center;
     padding: 20px;
     flex-flow: 0 0 auto;
+    border-radius: 10px;
    
 }
 /* section 6 */
@@ -181,6 +200,7 @@ font-size: 2.5em;
     align-content: center;
     padding: 20px;
     flex-flow: 0 0 auto;
+    border-radius: 10px;
 }
 
 /* section 7 */
@@ -191,6 +211,7 @@ flex-direction: column;
 align-content: center;
 padding: 20px;
 flex-flow: 0 0 auto;
+border-radius: 10px;
 
 
 
@@ -203,6 +224,7 @@ flex-direction: column;
 align-content: center;
 padding: 20px;
 flex-flow: 0 0 auto;
+border-radius: 10px;
 
 }
 
@@ -250,11 +272,21 @@ flex-flow: 0 0 auto;
     /* section 5 */
     .section__5{
         grid-area: 3 / 3 / 4 / 5; 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
        
+    }
+    .sous_titre_5{
+order:2;
+align-content: center;
+font-size: 3em;
+color: hsl(31, 66%, 93%);;
     }
     /* section 6 */
     .section__6{
         grid-area: 3 / 2 / 4 / 3;
+        max-height: fit-content;
      
         
     }
@@ -262,8 +294,6 @@ flex-flow: 0 0 auto;
     .sous_section{
         grid-area: 1 / 1 / 4 / 2;
         display:grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 300px 300px;
         grid-row-gap: 40px;
     }
     /* section 7 */
@@ -278,6 +308,7 @@ flex-flow: 0 0 auto;
     /* section 8 */
     .section__8{
     grid-area: 2 / 1 / 3 / 2;
+    max-height: fit-content;
     
        
     }
